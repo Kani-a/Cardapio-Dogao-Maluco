@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Cardapio-Dogao-Maluco/'
+  base: '/Cardapio-Dogao-Maluco'
 })
