@@ -15,17 +15,25 @@ export default function HotdogRows({ hotdog }) {
             bordered
             dataSource={hotdog}
             renderItem={(item) => (
-                <List.Item>
-                    <List.Item.Meta
-                        title={<><h2>{item.nome} </h2> <div className="preco">{item.preço.toFixed(2)} R$</div> </>}
-                         description={
-                            `Complementos: ${item.complementos.join(', ')}`
-                            + (item.salcichas ? ` | Salsichas: ${item.salcichas}` : '')
-                            + (item.linguiça ? ` | Linguiças: ${item.linguiça}` : '')
-                        }
-                    />
-                    
-                </List.Item>
+           <List.Item>
+                <List.Item.Meta
+                    title={
+                        <>
+                            <h2>{item.nome}</h2>
+                            {/* Linha com salsichas e linguiças */}
+                            <div>
+                                {item.salcichas && <span>Salsichas: {item.salcichas}</span>}
+                                {item.salcichas && item.linguiça && <span> | </span>}
+                                {item.linguiça && <span>Linguiças: {item.linguiça}</span>}
+                            </div>
+                            <div className="preco">{item.preço.toFixed(2)} R$</div>
+                        </>
+                    }
+                    description={
+                        `Complementos: ${item.complementos.join(', ')}`
+                    }
+                />
+            </List.Item>
             )}
         />
     </div>
