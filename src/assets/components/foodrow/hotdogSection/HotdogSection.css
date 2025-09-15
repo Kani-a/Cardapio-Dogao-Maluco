@@ -95,24 +95,22 @@
     border-radius: 10px;
   }
   .ant-list-header h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
-  .ant-list-item {
-    padding: 10px 8px;
-    border-radius: 8px;
-    margin-bottom: 8px;
+  .ant-list-item-meta-title{
+    display: flex;
   }
   .ant-list-item-meta-title h2 {
-    font-size: 0.98rem;
+    font-size: 0.9rem;
   }
   .ant-list-item-meta-title .preco {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
     padding: 4px 8px;
     min-width: 54px;
   }
   .ant-list-item-meta-description {
-    font-size: 0.93rem;
+    font-size: 0.6rem;
   } .ant-list-header {
     min-height: 60px;
     padding-top: 16px;
@@ -120,7 +118,46 @@
     background-size: 80%;
   }
   .ant-list-header h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 2px 8px;
+  }
+}
+.hotdog-title-block {
+  width: 100%;
+}
+
+.hotdog-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.hotdog-title-row h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hotdog-info-row {
+  margin-top: 4px;
+  font-size: 0.98rem;
+  color: #333;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+@media (max-width: 700px) {
+  .hotdog-title-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+  .hotdog-title-row h2 {
+    font-size: 1rem;
+  }
+  .hotdog-info-row {
+    font-size: 0.85rem;
+    margin-top: 2px;
   }
 }

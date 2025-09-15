@@ -1,7 +1,5 @@
-import { hotdogs } from "../public/dogMaluco"
+import { hotdogs } from "/public/dogMaluco.js"
 import HotdogRows from "./assets/components/foodrow/hotdogSection/HotdogSection";
-import "./app.css"
-import { Image } from "antd";
 
 function App() { 
   return (
